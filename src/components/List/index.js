@@ -97,6 +97,7 @@ class List extends Component {
     }
   }
   componentDidMount() {
+    console.log(this.ul.offsetHeight)
     this.interFun()
   }
 
@@ -104,7 +105,7 @@ class List extends Component {
     timer = setInterval(() => {
       const { top } = this.state
       this.setState({
-        top: top-1
+        top: this.ul.offsetHeight+top > 0 ? top-1 : 0
       })
     }, 50)
   }
@@ -123,15 +124,23 @@ class List extends Component {
     this.interFun()
   }
 
-
+  handleClick(item) {
+    alert(`${item.title}`)
+  }
 
   render() { 
     const { list, top } = this.state
     return ( 
-      <ul className="position-list" style={{top: top+'px'}} onMouseOver={this.mouseOver.bind(this)} onMouseOut={this.mouseOut.bind(this)}>
+      <ul
+        ref={ul => this.ul = ul}
+        className="position-list" 
+        style={{top: top+'px'}} 
+        onMouseOver={this.mouseOver.bind(this)} 
+        onMouseOut={this.mouseOut.bind(this)}
+      >
         {
           list.map((item, index) => (
-            <li className="position-item" key={index}>
+            <li className="position-item" key={index} onClick={this.handleClick.bind(this, item)}>
               <span className="position-item-title">{item.title}</span>
               <span className="position-item-city">{item.city}</span>
               <span className="position-item-time">{item.time}</span>
