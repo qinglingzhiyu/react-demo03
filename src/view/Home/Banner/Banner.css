@@ -79,6 +79,7 @@
 }
 
 .banner-search-btn {
+  cursor: pointer;
   position: relative;
   display: inline-block;
   color: #fff;
