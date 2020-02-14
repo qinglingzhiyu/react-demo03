@@ -1,0 +1,37 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px auto;
+  width: 1180px;
+}
+
+.main-other {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+}
+
+.main-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 310px;
+  height: 140px;
+  background: #FFFFFF;
+  box-shadow: 0 0 15px 0 rgba(31,56,88,0.08);
+  border-radius: 3px;
+}
+
+.main-img {
+  width: 179px;
+  height: 60px;
+}
+
+.main-img2 {
+  width: 260px;
+  height: 37px;
+}

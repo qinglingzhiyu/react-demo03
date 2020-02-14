@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Header from '../Header'
+import PositionHeader from '../Position-header'
 import List from '../List'
 import './Position.css'
 
@@ -11,7 +11,7 @@ class Position extends Component {
   render() { 
     return ( 
       <div className="position">
-        <Header />
+        <PositionHeader />
         <List />
       </div>
     );

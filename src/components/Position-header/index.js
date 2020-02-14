@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './Header.css'
+import './Position-header.css'
 
-class Header extends Component {
+class PositionHeader extends Component {
   constructor(props) {
     super(props);
     this.state = {  }
@@ -21,4 +21,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default PositionHeader;

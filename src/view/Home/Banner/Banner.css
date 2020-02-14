@@ -1,0 +1,138 @@
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 478px;
+}
+
+.banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(31,56,88,0.40);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-tip {
+  font-family: Rufina-Bold;
+  font-size: 54px;
+  color: #fff;
+  line-height: 56px;
+}
+
+.banner-tip-chinese {
+  font-family: PingFangSC-Thin;
+  font-size: 34px;
+  color: #fff;
+  margin-bottom: 38px;
+  line-height: 48px;
+}
+
+.banner-search {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  width: 490px;
+  height: 60px;
+  border: 0px;
+  background: none;
+  box-sizing: border-box;
+}
+
+.banner-search-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.1;
+}
+
+.banner-search-input {
+  width: 368px;
+  height: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.banner-search-btn {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  background: #F37327;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  width: 92px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.banner-hot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  width: 498px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.banner-hot-list {
+  display: flex;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.banner-hot-list li {
+  padding-right: 10px;
+}
+
+.banner-hot-list li:hover {
+  color: #F37327
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: rgba(31,56,88,0.30);
+  line-height: 20px;
+  margin-left: 8px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: red;
+  font-size: 20px;
+  font-weight: bolder;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: red;
+  font-size: 20px;
+  font-weight: bolder;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+  font-size: 20px;
+  font-weight: bolder;
+}
